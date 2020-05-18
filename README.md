@@ -65,7 +65,7 @@ The slide title here is probably the funniest joke in the presentation. Think of
 ![Slide 7](images/Slide7.png)
 
 _Slide 7_<br />
-Finding (and checking) all the data files is like the present that goes inside the box. The metadata is like the wrapping. The gift is not ready to go until the wrapping is done. You need to principle investigator details. You have to know something about the biology of the samples (species, tissue, cell type, disease, etc.). You have to define the pigeonhole to put the mass spec experiment into. There are some methods like details that are also required. You will want a copy of the manuscript draft at hand for the next steps.
+Finding (and checking) all the data files is like the present that goes inside the box. The metadata is like the wrapping. The gift is not ready to go until the wrapping is done. You need the principle investigator details. You have to know something about the biology of the samples (species, tissue, cell type, disease, etc.). You have to define the pigeonhole to put the mass spec experiment into. There are some Methods-like details that are also required. You will want a copy of the manuscript draft at hand for the next steps.
 
 ---
 
@@ -93,7 +93,7 @@ When the tools starts up, the first thing is to login to PRIDE. Someone associat
 ![Slide 11](images/Slide11.png)
 
 _Slide 11_<br />
-The next step is what type of submission are you doing. The PAW pipeline does not make the kinds of standardized output files needed for complete submissions. Select the partial submission options. You will be scolded for being such a horrible person that would not do a complete submission. Keep a stiff upper lip, it will all be okay.
+The next step is what type of submission are you doing. The PAW pipeline does not make the kinds of standardized output files needed for complete submissions. Select the partial submission option. You will be scolded for being such a horrible person that would not do a complete submission. Keep a stiff upper lip, it will all be okay.
 
 ---
 
@@ -107,14 +107,14 @@ Tears are hard on your keyboard. Click yes and save your hurts feelings for your
 ![Slide 13](images/Slide13.png)
 
 _Slide 13_<br />
-This is the next screen. You just want to click on those cool, big buttons, don’t you? Well, they are not buttons. Sorry. Stay strong. Between the partial submission shaming and feeling like a fool for clicking on buttons that are not buttons, you may be ready to give. Don’t worry, it gets harder! Click next.
+This is the next screen. You just want to click on those cool, big buttons, don’t you? Well, they are not buttons. Sorry. Stay strong. Between the partial submission shaming and feeling like a fool for clicking on buttons that are not buttons, you may be ready to give up. Don’t worry, it gets harder! Click next.
 
 ---
 
 ![Slide 14](images/Slide14.png)
 
 _Slide 14_<br />
-Ah, here is why you created that Word file. If it is not already open, open it and get ready to copy/paste. Most of the page are entry forms. The bottom one is a pull-down menu that will let you select more than one thing. You may see ugly red highlighting if you have filled in an entry form with too few or too many characters. When everything is filled in and okay, click next.
+Ah, here is why you created that Word file. If it is not already open, open it and get ready to copy/paste. Most widgets on this page are text entry forms. The bottom one is a pull-down menu that will let you select more than one thing. You may see ugly red highlighting if you have filled in an entry form with too few or too many characters. When everything is filled in and okay, click next.
 
 ---
 
@@ -128,7 +128,7 @@ Next, you upload all the files. Since you made a new folder with copies of the f
 ![Slide 16](images/Slide16.png)
 
 _Slide 16_<br />
-This is the folder where I collected all the files for this submission. You might be able to select folders or open up the folder and select one or more files. You can keep selecting files in batches unto you get everything. Putting everything in one folder helps make sure you do not forget any files.
+This is the folder where I collected all the files for this submission. You might be able to select folders or open up the folder and select one or more files. You can keep selecting files in batches until you get everything. Putting everything in one folder helps make sure you do not forget any files.
 
 For the PAW pipeline, the peak list files are the MS2 files. The Comet results are the SQT files. The top-hit summary files are TXT files. We have flavors of those files that are before or after FDR filtering. Only the filtered files are used for protein inference and/or quantification. They are smaller and what we need to submit. Various summary files for PSMs, peptides, and proteins should also be part of the submission. FASTA files, parameter files, log files, roadmap files, sample keys, readme files, etc. should also be part of the submission.
 
@@ -137,7 +137,7 @@ For the PAW pipeline, the peak list files are the MS2 files. The Comet results a
 ![Slide 17](images/Slide17.png)
 
 _Slide 17_<br />
-After you select the files, the list will show up. If you have long file names, you may need to resize the window and adjust column widths. The tool recognizes some file extensions like .FASTA and .RAW and then automatically puts those files into categories. The default is OTHER for file type. Each RAW file might have an associated PEAK list file (these are the filtered MS2 files in the PAW pipeline), there will be SEARCH results. You may have to manually assign files to their categories using the pull-down menu. Results summaries and quantification table are best left as OTHER.
+After you select the files, the list will show up. If you have long file names, you may need to resize the window and adjust column widths. The tool recognizes some file extensions like .FASTA and .RAW and then automatically puts those files into categories. The default is OTHER for file type. Each RAW file might have an associated PEAK list file (these are the filtered MS2 files in the PAW pipeline), there will be SEARCH results. You may have to manually assign files to their categories using the pull-down menu. Results summaries and quantification tables are best left as OTHER.
 
 ---
 
@@ -158,7 +158,7 @@ A new (and very nice) feature is computing check sums to verify that the uploade
 ![Slide 20](images/Slide20.png)
 
 _Slide 20_<br />
-Now we have one of the most confusing steps - defining the file relationships. This is really what PEAK and SEARCH files go with which RAW files. Based on base file names, the relationships may be already correctly guessed. If not, you have to select a file in the top window, and then add related files in the bottom window. Each RAW file has to have some relationship to at least one other file(s) in the submission (PEAK and SEARCH files). When you have defined things, click next.
+Now we have one of the most confusing steps - defining the file relationships. This is really about what PEAK and SEARCH files go with which RAW files. Based on base file names, the relationships may be already correctly guessed. If not, you have to select a file in the top window, and then add related files in the bottom window. Each RAW file has to have some relationship to at least one other file(s) in the submission (PEAK and SEARCH files). When you have defined things, click next.
 
 ---
 
@@ -193,7 +193,7 @@ This step lets you specify some controlled vocabulary terms in some categories. 
 ![Slide 25](images/Slide25.png)
 
 _Slide 25_<br />
-Enter the information for the PI here and click next. The PI or Lab Head will be included in the emails about the progress of the submission. You may want to alert them that there will be a couple of emails header their way. You get one confusing email after the data uploads successfully that basically just says the submission has be opened. After the submission has been checked over, it is either accepted or rejected. If it is accepted (yeah!), an email with the PXD number and instruction on how to reference the submission in your manuscript are communicated to you and the Lab Head.
+Enter the information for the PI here and click next. The PI or Lab Head will be included in the emails about the progress of the submission. You may want to alert them that there will be a couple of emails headed their way. You get one confusing email after the data uploads successfully that basically just says the submission has been opened. After the submission has been checked over, it is either accepted or rejected. If it is accepted (yeah!), an email with the PXD number and instruction on how to reference the submission in your manuscript are communicated to you and the Lab Head.
 
 ---
 
@@ -208,14 +208,6 @@ This step is for special projects. Do not mess with anything and click next.
 
 _Slide 27_<br />
 This is like the final order confirmation screen you get when you are ordering something you don’t really need from some place you are too lazy to go to. What you see here should be what you had in your local submission folder. If you ignored that advice and have been adding files from all over your file system, you might want to check that you have everything selected that you need, and that file types and relations are all okay. You have to agree to the service terms (the little check box) so that PRIDE can sell all of your private data (ha-ha). Take a few deep breaths and then click submit.
-
----
-
-![Slide 28](images/Slide28.png)
-
-_Slide 28_<br />
-The submission tool writes itself a record of what you did so that it can start over more gracefully if the actual file transfers fail. I usually just click the save button.
-
 ---
 
 ![Slide 28](images/Slide28.png)
@@ -228,7 +220,7 @@ The submission tool writes itself a record of what you did so that it can start 
 ![Slide 29](images/Slide29.png)
 
 _Slide 29_<br />
-You will get a progress bar for the actual file transfer step. This can take a long time to complete. The status indicator is a little flakey. There are two transfer protocols that the tool uses. Aspera is faster and that is used first. That does not always work. If it fails, FTP is used. You get a dialog box alert about that. However, the status information does not get reset, so you may thing noting is happening. It is better to just wait (like, several hours or overnight) and see if it finishes.
+You will get a progress bar for the actual file transfer step. This can take a long time to complete. The status indicator is a little flakey. There are two transfer protocols that the tool uses. Aspera is faster and that is used first. That does not always work. If it fails, FTP is used. You get a dialog box alert about that. However, the status information does not reset, so you may think nothing is happening. It is better to just wait (like, several hours or overnight) and see if it finishes.
 
 ---
 
