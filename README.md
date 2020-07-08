@@ -24,7 +24,14 @@ With more and more journals requiring mass spec data be placed in data repositor
 ![Slide 2](images/Slide2.png)
 
 _Slide 2_<br />
-ProteomeXchange is not PRIDE. There are several other repository options that can meet journal requirements. ProteomeXchange is kind of a centralized switchyard for data archives. I have only used PRIDE. There is a Java GUI application that you use for submitting data to PRIDE via ProteomeXchange. This guide will show you how to use that tool to make your data submission. You should do some reading at the links above to get some overview of what is to come.
+ProteomeXchange is not PRIDE. There are several other repository options that can meet journal requirements. ProteomeXchange is kind of a centralized switchyard for data archives. I have only used PRIDE. There is a Java GUI application that you use for submitting data to PRIDE via ProteomeXchange. This guide will show you how to use that tool to make your data submission. You should do some reading at the links (listed below) to get some overview of what is to come.
+
+- http://www.proteomexchange.org
+- http://www.proteomexchange.org/submission/index.html
+- https://www.ebi.ac.uk/pride/
+- https://www.ebi.ac.uk/pride/markdownpage/pridesubmissiontool#submission_tool
+- https://www.ebi.ac.uk/pride/markdownpage/submitdatapage#how_to_submit_data
+-https://www.ebi.ac.uk/pride/static/markdown/submitdatapage/files/Submission_Tutorial.pdf
 
 ---
 
@@ -49,7 +56,11 @@ For the data used in this example, some of the runs were from 2013 for a manuscr
 ![Slide 5](images/Slide5.png)
 
 _Slide 5_<br />
-Assuming that you have done thorough detective work and know what RAW files really go with the published data, you have to round up all of the intermediate files. RAW files are often processed to make peak list text files for input to search engines (like MGF files). Many newer search engines can read RAW files directly, so there may not be any peak list files. There will be search results. What do we mean by search results? That is another can of worms. Most search engines (Comet, SEQUEST, Mascot, Andromeda, etc.) produce a list of peptide spectrum matches (PSMs) with some collection of search engine quantities. No one wants to look at PSM lists. They are noisy and not what the biologist wants. Some sort of post processing is used to get rid of the noise. That can take many forms. The target/decoy method or some other form of FDR control are commonly used. That is usually from other parts of the black box for all-in-one programs or from another pipeline step like Percolator. Filtered PSMs are nicer than unfiltered PSMs. But still not what anyone wants. The next step is usually protein inference to turn a really long list of peptide sequences into a smaller list of proteins. Now we are getting into the biology realm. Quantitative studies have replaced flag planting discovery experiments (and pissing contests – my list is bigger than your list. We should call those list waving experiments or dickomics).
+Assuming that you have done thorough detective work and know what RAW files really go with the published data, you have to round up all of the intermediate files. RAW files are often processed to make peak list text files for input to search engines (like MGF files). Many newer search engines can read RAW files directly, so there may not be any peak list files.
+
+There will be search results. What do we mean by search results? That is another can of worms. Most search engines (Comet, SEQUEST, Mascot, Andromeda, etc.) produce a list of peptide spectrum matches (PSMs) with some collection of search engine quantities. No one wants to look at PSM lists. They are noisy and not what the biologist wants. Some sort of post processing is used to get rid of the noise. That can take many forms. The target/decoy method or some other form of FDR control are commonly used. That is usually from other parts of the black box for all-in-one programs or from another pipeline step like Percolator. Filtered PSMs are nicer than unfiltered PSMs. But still not what anyone wants.
+
+The next step is usually protein inference to turn a really long list of peptide sequences into a smaller list of proteins. Now we are getting into the biology realm. Quantitative studies have replaced "flag planting" discovery experiments (a.k.a. pissing contests – my list is bigger than your list. We should call those list waving experiments dickomics).
 
 There will be many files to round up. You might forget some important ones – the FASTA file for the searches, the search program configuration file, etc. You might want to make a file key file, too.
 
@@ -58,7 +69,9 @@ There will be many files to round up. You might forget some important ones – t
 ![Slide 6](images/Slide6.png)
 
 _Slide 6_<br />
-The slide title here is probably the funniest joke in the presentation. Think of the data archive like the stone tablets with the 10 Commandments; they are literally set in stone. The time before you submit the files is the time to double and triple check everything. This is also a major reason to make a separate folder for all of the files, so that the double checking is more efficient and the chance for mistakes is reduced. In quantitative experiments, the sample keys are essential. Think about someone else trying to figure out your experiment. What LC runs constitute the biological samples (did you have fractions?)? Do you have hidden sample dimensions (TMT channels, SILAC channels, etc.)? This is a little like comments in programming code. One of the more important people you write comments for is your future self.
+The slide title here is probably the funniest joke in the presentation. Think of the data archive like the stone tablets with the 10 Commandments; they **are** literally set in stone. Before you submit the files is the time to double and triple check everything. This is also a major reason to make a separate folder for all of the files, so that the double checking is more efficient and the chance for mistakes is reduced. In quantitative experiments, the sample keys are essential. Think about someone else trying to figure out your experiment. What LC runs constitute the biological samples (did you have fractions?)? Do you have hidden sample dimensions (TMT channels, SILAC channels, etc.)? This is a little like comments in programming code. One of the more important people you write comments for is your future self.
+
+> see https://pwilmart.github.io/blog/2020/06/07/Sample-keys for some more thoughts on proteomics metadata
 
 ---
 
@@ -72,21 +85,21 @@ Finding (and checking) all the data files is like the present that goes inside t
 ![Slide 8](images/Slide8.png)
 
 _Slide 8_<br />
-You will have to fill in a web-like form with these details. The forms have character limits and do not allow special characters (or at least not easily). I like to make a Word file with these details. You can make use of the spelling and grammar checking and the word and character counting tools. Copy/paste from the Word file when filling in the form is recommended. More and more manuscripts have experiments beyond the mass spec parts these days. You do not need to describe anything except the mass spec parts of the study. What specific biological samples were used in the mass spec experiment and how were they prepared. You may have details in your notebooks about how those samples were digested, cleaned up, run on the HPLC systems, and on the mass spec. You might want to compile this metadata at the time you send results to clients instead of years later.
+You will have to fill in a web-like form with these details. The forms have character limits and do not allow special characters (or at least not easily). I like to make a Word file with these details. You can make use of the spelling and grammar checking, and the word and character counting tools. Copy/paste from the Word file when filling in the form is recommended. More and more manuscripts these days have experiments in addition to the mass spec parts. You do not need to describe anything except the mass spec parts of the study. What were the specific biological samples that were used in the mass spec experiment and how were they prepared. You may have details in your notebooks about how those samples were digested, cleaned up, run on the HPLC systems, and on the mass spec. You might want to compile this metadata at the time you send results to clients instead of years later.
 
 ---
 
 ![Slide 9](images/Slide9.png)
 
 _Slide 9_<br />
-You are finally up to attempting to make the actual submission. Will you stick the landing? If you have downloaded the latest version of the submission tool, you have to get it to run. Java is strange. It is property of Oracle (a big database company that acquired Sun Micro Systems). It seems kind of open source. It can have some security issues, usually from out-of-date versions. It may be installed and up-to-date on your system or it may not. You can try to launch the submission tool by double clicking or you can also use the command line.
+You are finally up to attempting to make the actual submission. Will you stick the landing? If you have downloaded the latest version of the submission tool, you have to get it to run. Java is strange. It is property of Oracle (a big database company that acquired Sun Micro Systems). It seems kind of open source. It can have some security issues, usually from out-of-date versions. It may be installed and up-to-date on your system or it may not. You can try to launch the submission tool by double clicking or you can also use the command line. You may have to do some extra work to get Java up and running to get the submission tool launched.
 
 ---
 
 ![Slide 10](images/Slide10.png)
 
 _Slide 10_<br />
-When the tools starts up, the first thing is to login to PRIDE. Someone associated with with the submission needs to have a PRIDE account. You do not have to be a manuscript coauthor to submit data to PRIDE, but you will have to take some responsibility for the submission.
+When the tools starts up, the first thing is to login to PRIDE. Someone associated with with the submission needs to have a PRIDE account. You do not have to be a manuscript co-author to submit data to PRIDE, but you will have to take some responsibility for the submission.
 
 ---
 
@@ -100,7 +113,7 @@ The next step is what type of submission are you doing. The PAW pipeline does no
 ![Slide 12](images/Slide12.png)
 
 _Slide 12_<br />
-Tears are hard on your keyboard. Click yes and save your hurts feelings for your therapist or cold beer.
+Tears are hard on your keyboard. Click yes and save your hurts feelings for your therapist or a cold beer.
 
 ---
 
@@ -207,7 +220,8 @@ This step is for special projects. Do not mess with anything and click next.
 ![Slide 27](images/Slide27.png)
 
 _Slide 27_<br />
-This is like the final order confirmation screen you get when you are ordering something you don’t really need from some place you are too lazy to go to. What you see here should be what you had in your local submission folder. If you ignored that advice and have been adding files from all over your file system, you might want to check that you have everything selected that you need, and that file types and relations are all okay. You have to agree to the service terms (the little check box) so that PRIDE can sell all of your private data (ha-ha). Take a few deep breaths and then click submit.
+This is like the final order confirmation screen you get when you are ordering something online you don’t really need from some place you are too lazy to go to. What you see here should be what you had in your local submission folder. If you ignored that advice and have been adding files from all over your file system, you might want to check that you have everything selected that you need, and that file types and relations are all okay. You have to agree to the service terms (the little check box) so that PRIDE can sell all of your private data (ha-ha). Take a few deep breaths and then click submit.
+
 ---
 
 ![Slide 28](images/Slide28.png)
@@ -220,7 +234,7 @@ The submission tool writes itself a record of what you did so that it can start 
 ![Slide 29](images/Slide29.png)
 
 _Slide 29_<br />
-You will get a progress bar for the actual file transfer step. This can take a long time to complete. The status indicator is a little flakey. There are two transfer protocols that the tool uses. Aspera is faster and that is used first. That does not always work. If it fails, FTP is used. You get a dialog box alert about that. However, the status information does not reset, so you may think nothing is happening. It is better to just wait (like, several hours or overnight) and see if it finishes.
+You will get a progress bar for the actual file transfer step. This can take a long time to complete. The status indicator is a little flakey. There are two transfer protocols that the tool uses. Aspera is faster and that is used first. That does not always work. If it fails, FTP is used. You get a dialog box alert about that. However, the status information may not reset, so you may think nothing is happening. It is better to just wait (like, several hours or overnight) and see if it finishes.
 
 ---
 
@@ -239,3 +253,5 @@ You get a coupled of emails right after you submit the archive. The archive will
 ---
 
 Thank you!  
+
+-PW 20200707
