@@ -17,7 +17,7 @@ A lighthearted guide to submitting proteomics data to PRIDE.
 ![Slide 1](images/Slide1.png)
 
 _Slide 1_<br />
-With more and more journals requiring mass spec data be placed in data repositories to submit manuscripts, you may find yourself struggling with an efficient workflow for ProteomeXchange data submissions. This quide is how I prepare the data and metadata for submissions.
+With more and more journals requiring mass spec data be placed in data repositories to submit manuscripts, you may find yourself struggling with an efficient workflow for ProteomeXchange data submissions. This guide is how I prepare the data and metadata for submissions.
 
 ---
 
